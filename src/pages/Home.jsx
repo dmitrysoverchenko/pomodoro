@@ -1,7 +1,8 @@
 import React from "react";
+import Timer from "../components/Timer";
 
 const Home = (props) => {
-  return <div>HOME</div>;
+  return <Timer />;
 };
 
 export default Home;

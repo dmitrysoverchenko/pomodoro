@@ -1,7 +1,9 @@
 import "./App.css";
 import { Switch, Route, Redirect } from "react-router-dom";
 import Header from "./components/Header";
-import Timer from "./components/Timer";
+import Home from "./pages/Home";
+import Overview from "./pages/Overview";
+import History from "./pages/History";
 
 function App() {
   return (
@@ -12,9 +14,15 @@ function App() {
           <Route exact path="/">
             <Redirect to="/home" />
           </Route>
-          <Route path="/home"></Route>
-          <Route exact path="/history"></Route>
-          <Route exact path="/overview"></Route>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/history">
+            <History />
+          </Route>
+          <Route exact path="/overview">
+            <Overview />
+          </Route>
         </Switch>
       </main>
     </>

@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Select from "./Select";
-import Button from "./Button";
 
 export default function Timer() {
   const [minutes, setMinutes] = useState(25);
@@ -28,8 +26,6 @@ export default function Timer() {
 
   return (
     <div className="pomodoro">
-      <Select />
-      <Button />
       <div className="timer">
         {timerMinutes}:{timerSeconds}
       </div>
